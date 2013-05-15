@@ -1,0 +1,1 @@
+G ([x1 /message/name] ((x1 = {ElephantUpgrade}) -> (X (G ([x2 /message/name] (!(x2 = {ElephantUpgrade})))))))
