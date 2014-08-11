@@ -1,0 +1,10 @@
+# --------------------------------------------------------------
+# Pingu property
+# An engineer must not recieve order to salvage building when being constructed.
+#
+# @Caption("NoSalvageOrderWhenBuilt");
+# @ReportOn(false);
+# @Description("Building was creating an engineer who was gonna automatically salvage an other building.  Should normally repair.");
+# --------------------------------------------------------------
+G ( ∀ g ∈ message/units/unit/neworder[action=UnitActionResource]/goal :
+  ( ∀ x ∈ message/units/unit[id=$g]/isbuilding : ( ¬ (x = true ) ) ) )

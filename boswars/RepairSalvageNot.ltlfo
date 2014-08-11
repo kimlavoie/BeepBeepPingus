@@ -1,0 +1,10 @@
+# --------------------------------------------------------------
+# Pingu property
+# Can't salvage AND repair the same building
+#
+# @Caption("RepairSalvageNot");
+# @ReportOn(false);
+# @Description("Unit repaired a building who was being salvaged");
+# --------------------------------------------------------------
+G ( ∀ g ∈ message/units/unit/order[action=UnitActionRepair]/goal :
+  ( ∀ x ∈ message/units/unit/order[goal=$g]/action : ( ¬ (x = UnitActionResource ) ) ) )
