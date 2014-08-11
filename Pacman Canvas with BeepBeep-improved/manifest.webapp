@@ -1,0 +1,13 @@
+{
+	"name": "Pacman Canvas (Beta)",
+	"description": "An old classic, rewritten in HTML5",
+	"launch_path" : "/index.htm",
+	"icons" : {
+		"128" : "/img/icon-128.pngg"
+	},
+	"developer" : {
+		"name" : "Vincent Lavoie",
+		"url" : "https://www.facebook.com/VinceLa5"
+	},
+	"default_locale" : "en"
+}
